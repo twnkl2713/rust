@@ -38,4 +38,20 @@ fn main(){
     println!("Age: {}", user.age);
     println!("Can vote? {}", user.can_vote);
 
+    // Shortcut
+    let x = 1.0;
+    let y = 1.0;
+    let p = Point{x, y};
+
+    // Copy fields
+    let p0 = Point{x: 1.0, y: 1.0};
+    let p1 = Point{x: 2.0, ..p0};
+    println!("{:?}", p0);
+    println!("{:?}", p0);
+
+    // Update
+    let mut p = Point{x: 10.0, y:10.0};
+    p.x += 1.0;
+    p.y += 1.0;
+    println!("{:?}", p);
 }
