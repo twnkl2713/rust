@@ -18,8 +18,6 @@ fn main(){
     println!("{}", x);
     let v: Vec<_> = vec![1, 2, 3];
 
-    // w3schools
-
     let my_num = 5; //integer
     let my_double = 5.99; // double
     let my_letter = 'D'; // character
