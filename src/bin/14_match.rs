@@ -7,7 +7,7 @@ enum Friends {
     Nene,
     Bochan,
 }
-fn main(){
+fn main() {
     // let x = 1;
     // if x == 1 {
     //     println!("one");
@@ -20,7 +20,7 @@ fn main(){
     // }
     // the above same thing can be written using match
 
-    let x = 1;
+    let x = 1; 
     match x {
         1 => println!("one"),
         2 => println!("two"),

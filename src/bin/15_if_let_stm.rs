@@ -12,8 +12,8 @@ fn main() {
     }
     // let else 
     let Some(v) = x else {
-        // diverge - panic pr return
+        // must "diverge" - panic or return
         panic!("x is none");
     };
-    println!("if let {v}");
+    println!("let else {v}");
 }
