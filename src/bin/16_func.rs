@@ -42,6 +42,5 @@ fn main() {
     let multi = mult(x, y);
     println!("Sum is: {}", sum);
     println!("Multiplication is: {x} * {y} = {}", multi);
-    // no output
     print_name("Kon'nichiwa".to_string());
 }
