@@ -16,7 +16,7 @@ fn div(x: u32, y: u32) -> Result<u32, MathError> {
 }
 fn main(){
     // Error
-    // panice!("crash");
+    // panic!("crash");
 
     // Option or Result
     let arr = [1, 2, 3];
