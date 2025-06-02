@@ -2,7 +2,7 @@
 
 fn main(){
     // Option
-    // let x: Option<i32> = Some(3);
+    // let x: Option<i32> git= Some(3);
     // match x{
     //     Some(val) => println!("val = {val}"),
     //     None => panic!("None"),
@@ -18,9 +18,5 @@ fn main(){
     // If x was None:
     // let none_value: Option<i32> = None;
     // let x = none_value.unwrap();  // This will panic!
-
-    let x: Option<i32> = None;
-    let v = x.expect("x is none");
-    println!("val = {v}");  
 
 }
