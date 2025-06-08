@@ -57,17 +57,19 @@ fn main() {
     greet(&cat); // static: meow
     greet(&dog); // static: woof
 
+    // Returned concrete type - still statically dispatched
     let animal = return_concrete_type();
-    println!("animal.speak: {}", animal.speak());
+    println!("animal.speak: {}", animal.speak()); // woof
 
+    // Dynamic dispatch using trait object
     let animal_str = "dog";
     let animal: &dyn Animal = match animal_str {
         "dog" => &Dog,
         _ => &Cat,
     };
 
-    greet_dyn(animal);
+    greet_dyn(animal); // dynamic: woof
 
     let animal = rand_animal(11);
-    println!("rand animal: {}", animal.speak());
+    println!("rand animal: {}", animal.speak()); // meow
 }
