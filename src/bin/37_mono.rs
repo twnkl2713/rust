@@ -8,7 +8,7 @@ struct Point<T> {
     y: T,
 }
 
-//  non generic versions
+// non generic versions
 struct PointU32 {
     x: u32,
     y: u32,
