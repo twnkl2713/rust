@@ -66,5 +66,5 @@ fn main() {
     };
 
     dyn_dispatch_box(obj);
-    // let x = obj; -> this won't compile -> dyn_dispatch_box takes ownership
+    // let x = obj; -> this won't compile, dyn_dispatch_box takes ownership
 }
