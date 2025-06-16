@@ -15,10 +15,10 @@ fn main() {
     }
     let vals: Vec<u32> = vec![1, 2, 3];
     let data: Vec<u32> = vals
-        .into_iter()
-        .filter(|x| *x <= 2)
-        .map(|x| 2 * x)
-        .collect();
+        .into_iter() // // turns vec into iterator
+        .filter(|x| *x <= 2) // keep only x <= 2
+        .map(|x| 2 * x)// multiply each x by 2
+        .collect(); // convert back to Vec
     // let data: HashSet<u32> = vals.iter().map(|x| 2 * x).collect();
     println!("filter and then map: {:?}", data);
 
@@ -29,12 +29,14 @@ fn main() {
     let vals: Vec<u32> = vec![1, 2, 3];
     let zipped: Vec<(String, u32)> = keys
         .into_iter()
-        .zip(vals.into_iter())
+        .zip(vals.into_iter())// pairs items from two iterators
         .collect();
 
     println!("zipped {:?}", zipped);
 
     let vals: Vec<u32> = vec![1, 2, 3];
-    let sum = vals.iter().fold(0, |acc, x| acc + x);
+    let sum = vals
+        .iter()
+        .fold(0, |acc, x| acc + x); // accumulates values
     println!("sum = {sum}");
 }
