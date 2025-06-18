@@ -23,4 +23,13 @@ fn main() {
     let mut f = || s += " world";
     f();
     println!("main: {s}");
+
+    // Take ownership of value T
+    let s = "rust".to_string();
+    let f = move || {
+        println!("move: {s}");
+        s;
+    };
+    f();
+    f();
 }
