@@ -2,7 +2,7 @@
 #[deny(arithmetic_overflow)]
 fn main() {
     // Signed Integers
-    let i0: i8 = 0; // -2**(8-1) to 2**(8-1) - 1 (8-bit signed integer)
+    let i0: i8 = 0; // -(2**8 - 1) to 2**8 - 1 (8-bit signed integer)
     let i1: i16 = 1;
     let i2: i32 = 1;
     let i3: i64 = 1;
