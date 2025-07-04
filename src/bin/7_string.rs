@@ -38,3 +38,5 @@ fn main(){
     let msg = format!("Hello {lang} {emoji}");
     println!("{}", msg);
 }
+
+// we want a 'view' into the original string and not copy it over - string slices
