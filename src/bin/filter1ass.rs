@@ -1,5 +1,5 @@
 fn filter_and_map(v: Vec<i32>) -> Vec<i32> {
-    let new_iter = v1.iter().filter(|x| *x % 2 == 1).map(|x| x + 1);
+    let new_iter = v.iter().filter(|x| *x % 2 == 1).map(|x| x + 1);
     let new_vec: Vec<i32> = new_iter.collect(); // iterator back to vector
     return new_vec;
 }
